@@ -1,0 +1,20 @@
+# RevSentence
+36th program on c
+#include<stdio.h>
+void revsentence();
+int main()
+{
+printf("enter a sentence \n");
+revsentence();
+return (0);
+}
+void revsentence()
+{
+char c;
+scanf("%c",&c);
+if (c != '\n')
+{
+revsentence();
+printf("%c",c);
+}
+}
